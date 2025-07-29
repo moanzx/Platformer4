@@ -1,0 +1,1 @@
+{"layer_list": [{"collision": true, "visible": true, "off_grid": {}, "grid": {"16;8": {"world_element_type": "utils", "element": "player_spawner", "variance": 0, "pos": [16, 8]}, "16;9": {"world_element_type": "tiles", "element": "mossy_stone", "variance": 0, "pos": [16, 9]}}}], "background_list": [], "borders": {"top": 0, "bottom": 16, "left": 0, "right": 32}}

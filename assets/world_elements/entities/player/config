@@ -1,0 +1,8 @@
+{
+"idle": 0.15,
+"run": 0.25,
+"jump": 0,
+"fall": 0,
+"hit": 0.10,
+"draw_offset": []
+}
