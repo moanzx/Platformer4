@@ -45,6 +45,7 @@ Precise, responsive physics with:
 - **Special tile detection** (kill tiles, victory tiles) with event triggers
 - **Collision state management** with multiple collision states
 - **Spatial partitioning concepts** for efficient collision detection
+![Demo](gifs/Game1.gif)
 
 ```python
 # Advanced collision system
@@ -100,6 +101,7 @@ Smooth rendering with multiple layers:
 - **Background parallax system** with tiled backgrounds
 - **Render scaling** for performance optimization
 - **Surface caching** for efficient tile rendering
+![Demo](gifs/Camera1.gif)
 
 ### 🎨 **8. Particle System & Visual Effects**
 
