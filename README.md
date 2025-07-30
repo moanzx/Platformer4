@@ -1,6 +1,6 @@
 # 🎮 Platformer4 - Complete 2D Game Engine
 
-![Demo](gifs/Game2.gif)
+![Demo](gifs/Game3.gif)
 
 A **full-featured 2D platformer game engine** built from scratch in Python using Pygame. This is not just a game - it's a complete game development framework with sophisticated systems and a professional-level visual editor.
 
