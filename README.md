@@ -14,6 +14,7 @@ A complete level editor built from scratch with:
 - **Save/load system** with JSON-based level serialization
 - **Grid visualization** with transparency and coordinate display
 - **Mouse-based interaction** with proper coordinate conversion and drag support
+![Demo](gifs/Editor1.gif)
 
 ```python
 # Advanced editor capabilities
