@@ -1,10 +1,13 @@
 # 🎮 Platformer4 - Complete 2D Game Engine
 
+![Demo](gifs/Game2.gif)
+
 A **full-featured 2D platformer game engine** built from scratch in Python using Pygame. This is not just a game - it's a complete game development framework with sophisticated systems and a professional-level visual editor.
 
 ## 🌟 **Most Impressive Features**
 
 ### 🛠️ **1. Visual Level Editor**
+
 A complete level editor built from scratch with:
 
 - **Real-time tile placement** with grid snapping and visual feedback
@@ -14,7 +17,8 @@ A complete level editor built from scratch with:
 - **Save/load system** with JSON-based level serialization
 - **Grid visualization** with transparency and coordinate display
 - **Mouse-based interaction** with proper coordinate conversion and drag support
-![Demo](gifs/Editor1.gif)
+  ![Demo](gifs/Editor1.gif)
+  ![Demo](gifs/Game2.gif)
 
 ```python
 # Advanced editor capabilities
@@ -24,6 +28,7 @@ self.border_click = False  # Border editing system
 ```
 
 ### 🏗️ **2. Architecture & Design Patterns**
+
 Clean, modular architecture with:
 
 - **Component-Based Design** with dedicated modules for each system
@@ -33,6 +38,7 @@ Clean, modular architecture with:
 - **Object-Oriented Design** with proper abstraction and encapsulation
 
 ### 🎯 **3. Physics & Collision System**
+
 Precise, responsive physics with:
 
 - **Separate X/Y collision handling** for smooth, glitch-free movement
@@ -48,6 +54,7 @@ self.collisions = {'top': False, 'bottom': False, 'right': False, 'left': False}
 ```
 
 ### 🗺️ **4. Multi-Layer Tilemap Engine**
+
 Complete tilemap system with:
 
 - **Multi-layer tilemap** with collision detection and visibility controls
@@ -58,6 +65,7 @@ Complete tilemap system with:
 - **Grid-based spatial indexing** for O(1) tile lookups
 
 ### 🤖 **5. Enemy AI System**
+
 Intelligent enemy behavior with:
 
 - **Pathfinding** for ground-based enemies with edge detection
@@ -68,13 +76,14 @@ Intelligent enemy behavior with:
 
 ```python
 # Mathematical trajectory calculation for ranged attacks
-strength = ((self.pos[0]- self.player.rect.centerx)**2 + (self.pos[1]- self.player.rect.centery)**2) ** 0.5 
+strength = ((self.pos[0]- self.player.rect.centerx)**2 + (self.pos[1]- self.player.rect.centery)**2) ** 0.5
 self.velocity = pygame.math.Vector2(speed * (self.player.rect.centerx- self.pos[0])/strength, speed * (self.player.rect.centery- self.pos[1])/strength)
 ```
 
 ## 🎨 **Visual & Animation Systems**
 
 ### 🎬 **6. Animation System**
+
 Frame-based animation with:
 
 - **Configurable animation speeds** per entity and state
@@ -84,6 +93,7 @@ Frame-based animation with:
 - **Draw offset system** for precise sprite positioning
 
 ### 🎥 **7. Camera & Rendering System**
+
 Smooth rendering with multiple layers:
 
 - **Smooth camera following** with scroll calculations and easing
@@ -93,6 +103,7 @@ Smooth rendering with multiple layers:
 - **Surface caching** for efficient tile rendering
 
 ### 🎨 **8. Particle System & Visual Effects**
+
 **Dynamic visual effects** that enhance gameplay:
 
 - **Multiple particle types**: Death particles, projectile impact particles
@@ -106,14 +117,15 @@ Smooth rendering with multiple layers:
 for i in range(36):
     angle = i * (2 * math.pi / 36)
     speed = 1.5
-    self.level.particle_list.append(Ba_Particle(self.game, self.level, self.pos, 
-        pygame.math.Vector2(random.random() * speed * math.cos(angle), 
+    self.level.particle_list.append(Ba_Particle(self.game, self.level, self.pos,
+        pygame.math.Vector2(random.random() * speed * math.cos(angle),
                            random.random() * speed * math.sin(angle))))
 ```
 
 ## 🎮 **Gameplay Systems**
 
 ### 🎯 **9. Projectile System**
+
 Projectile mechanics with realistic physics:
 
 - **Mathematical trajectory calculation** using trigonometry
@@ -123,6 +135,7 @@ Projectile mechanics with realistic physics:
 - **Velocity-based movement** with proper physics
 
 ### 🎪 **10. Game State Management**
+
 Complete game flow with multiple states:
 
 - **Death/restart system** with fade transitions and animations
@@ -132,6 +145,7 @@ Complete game flow with multiple states:
 - **Pause and menu systems** with proper state preservation
 
 ### 🎨 **11. UI System**
+
 User interface with modern design:
 
 - **Animated buttons** with hover and click effects
@@ -144,6 +158,7 @@ User interface with modern design:
 ## 📊 **Technical Excellence**
 
 ### ⚡ **12. Performance Optimizations**
+
 Efficient code that handles complex scenes:
 
 - **Surface caching** for tile rendering to reduce memory allocation
@@ -153,6 +168,7 @@ Efficient code that handles complex scenes:
 - **Frame rate optimization** with 60 FPS target and smooth performance
 
 ### 🏗️ **13. Data Structures & Algorithms**
+
 Data management for complex game states:
 
 - **Grid-based spatial indexing** for fast tile lookups (O(1) access)
@@ -162,6 +178,7 @@ Data management for complex game states:
 - **Dynamic asset loading** with automatic discovery and caching
 
 ### 🎯 **14. Asset Management System**
+
 Asset pipeline with dynamic loading:
 
 - **Automatic asset discovery** from file system with recursive loading
@@ -181,6 +198,7 @@ self.load_entities_assets()
 ## 🚀 **Technical Skills Demonstrated**
 
 ### **Core Programming:**
+
 - **Object-Oriented Design** - Clean inheritance hierarchies and encapsulation
 - **Game Development** - Complete game engine from scratch
 - **Mathematics** - Physics, collision detection, trajectory calculations
@@ -188,13 +206,12 @@ self.load_entities_assets()
 - **File I/O** - Asset loading, level serialization, configuration management
 
 ### **Advanced Concepts:**
+
 - **Component-Based Architecture** - Modular, reusable systems
 - **State Management** - Complex game state handling
 - **Performance Optimization** - Efficient rendering and collision systems
 - **UI/UX Design** - Professional user interfaces and interactions
 - **System Design** - Scalable, maintainable architecture
-
-
 
 ## 🛠️ **Getting Started**
 
@@ -204,12 +221,14 @@ python game.py
 ```
 
 **Controls:**
+
 - **Arrow Keys**: Move player
 - **Space**: Jump
 - **Escape**: Return to menu
 - **R**: Restart level (when dead)
 
 **Editor Controls:**
+
 - **Left Click**: Place tiles
 - **Right Click**: Remove tiles
 - **Mouse Wheel**: Switch layers
@@ -218,4 +237,4 @@ python game.py
 
 ---
 
-This project demonstrates strong software engineering skills and shows the ability to build complex, multi-system applications from the ground up. The level editor provides a complete development environment, while the architecture showcases solid programming concepts and design patterns. 
+This project demonstrates strong software engineering skills and shows the ability to build complex, multi-system applications from the ground up. The level editor provides a complete development environment, while the architecture showcases solid programming concepts and design patterns.
