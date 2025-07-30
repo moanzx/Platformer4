@@ -181,6 +181,9 @@ class Mob(Entity):
         self.attack_cd = 180
         self.attack_range_rect = pygame.rect.Rect(0,0,0,0)
 
+    def check_special_tiles(self):
+        pass
+
     def update(self):
         super().update()
         if self.attack_cd != 180:
