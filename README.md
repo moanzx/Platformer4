@@ -18,7 +18,6 @@ A complete level editor built from scratch with:
 - **Grid visualization** with transparency and coordinate display
 - **Mouse-based interaction** with proper coordinate conversion and drag support
   ![Demo](gifs/Editor1.gif)
-  ![Demo](gifs/Game2.gif)
 
 ```python
 # Advanced editor capabilities
