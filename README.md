@@ -59,11 +59,11 @@ A complete 2D platformer engine built in Python using Pygame. It includes a visu
 
 * **Menu:**
 
-  * **Mouse**: Navigate menus and place
+  * **Mouse**: Navigate menus
 * **Game:**
 
-  * **WASD**: Move player
-  * **R**: Restart level (when dead)
+  * **WASD and arrow keys**: Move player
+  * **ESC/R**: Restart level (when dead)
 * **Editor:**
 
   * **Mouse**: Place/remove tiles in editor with left and right click
