@@ -54,6 +54,11 @@ A complete 2D platformer engine built in Python using Pygame. It includes a visu
 ---
 
 ## 🚀 Getting Started
+**To run the game:**
+```
+python game.py
+```
+
 
 **Controls:**
 
